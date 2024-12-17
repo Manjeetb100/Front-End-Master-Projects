@@ -1,5 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
 body{
     margin: 0px; 
     padding: 0px; 
     box-sizing: border-box;
+    background-color: #D5E1EF; 
+    font-family: 'Lato', 'Noto Sans';
+}
+.card{
+    width: 320px; 
+    height: 499px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border : solid black 1px; */
+    position:absolute; 
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+.qrImage{
+    width: 160px; 
+    height: 160px; 
+    border: solid 1px black; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(./image-qr-code.png); */
+    background-size: cover;
+
+}
+.qrCode{
+    /* border: solid 1px black;  */
+    width: 288px; 
+    height: 288px; 
+    border-radius: 15px;
+    background-color: #2C7DFA;
+    padding-bottom: 12px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(./image-qr-code.png);
+    background-size: contain;
+
+}
+.content{
+    width: 288px; 
+    height: 131px;
+}
+.content p{
+    padding: 0 15px; 
+}
+
+p:nth-child(1){
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+    font-size: 22px;
+    font-weight: 900;
+}
+p:nth-child(2){
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    font-weight: 700;
+    color: darkgray
 }
